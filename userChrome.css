@@ -1,17 +1,23 @@
+/* Maniacsan/firefox-qutebrowser-userchrome */
+
 :root {
-	--tab-active-bg-color: #057;
-	--tab-inactive-bg-color: #333;
+	--sfwindow: #19171a;
+  	--sfsecondary: #201e21;
+
+
+	--tab-active-bg-color: var(--sfsecondary);
+	--tab-inactive-bg-color: var(--sfwindow);
 	--tab-active-fg-fallback-color: #eee;		/* color of text in an active tab without a container */
 	--tab-inactive-fg-fallback-color: #888;		/* color of text in an inactive tab without a container */
-	--urlbar-focused-bg-color: #41404c;
-	--urlbar-not-focused-bg-color: #1c1b22;
-	--toolbar-bgcolor: #2b2a33 !important;
-	--tab-font: 'DejaVu Sans Mono';
-	--urlbar-font: 'DejaVu Sans Mono';
+	--urlbar-focused-bg-color: var(--sfsecondary);
+	--urlbar-not-focused-bg-color: var(--sfwindow);
+	--toolbar-bgcolor: var(--sfwindow) !important;
+	/* --tab-font: 'DejaVu Sans Mono';
+	--urlbar-font: 'DejaVu Sans Mono'; */
 
 	/* try increasing if you encounter problems */
 	--urlbar-height-setting: 24px;
-	--tab-min-height: 16px !important;
+	--tab-min-height: 24px !important;
 
 	/* I don't recommend you touch this unless you know what you're doing */
 	--arrowpanel-menuitem-padding: 2px !important;
@@ -22,6 +28,11 @@
 	--toolbar-field-focus-background-color: var(--urlbar-focused-bg-color) !important;
 	--toolbar-field-background-color: var(--urlbar-not-focused-bg-color) !important;
 	--toolbar-field-focus-border-color: transparent !important;
+}
+
+/* Uses system font */
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif !important;
 }
 
 /* --- GENERAL DEBLOAT ---------------------------------- */
@@ -53,7 +64,7 @@ menupopup > #context-sep-navigation { display: none !important; }
 /* --- STYLE NAVBAR ------------------------------------ */
 
 /* remove padding between toolbar buttons */
-toolbar .toolbarbutton-1 { padding: 0 0 !important; }
+toolbar .toolbarbutton-1 { padding: 10 10 !important; }
 
 /* add it back to the downloads button, otherwise it's too close to the urlbar */
 #downloads-button {
