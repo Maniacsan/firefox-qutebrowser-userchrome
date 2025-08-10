@@ -27,11 +27,7 @@ there is no such directory create it.
 If you're unsure what the path to your profile's directory is, you can find out
 by going to `about:profiles`.
 
-Then either install the DejaVu Sans Mono font, or change the relevant line of
-`userChrome.css` (search for 'DejaVu Sans Mono') to some other font that you have
-installed. This affects the urlbar font.
-
-Optionally install [tridactyl](https://github.com/tridactyl/tridactyl) or a
+I use [Vimium C](https://addons.mozilla.org/en-US/firefox/addon/vimium-c/), you can use [tridactyl](https://github.com/tridactyl/tridactyl) or a
 similar extension for best results.
 
 Color of text in a tab is determined by its container. If a tab has no
@@ -40,12 +36,10 @@ adjusting values of variables defined at the top of `userChrome.css`.
 
 ## Screenshots
 
-![](https://raw.githubusercontent.com/Dook97/firefox-qutebrowser-userchrome/screenshots/basic.png)
-
+o
 With navbar shown:
 
-![](https://github.com/Dook97/firefox-qutebrowser-userchrome/blob/screenshots/urlbar.png)
-
+o
 ## Common issues
 
 ### black stripe under tab bar
